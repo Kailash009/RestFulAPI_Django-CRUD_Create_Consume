@@ -1,0 +1,10 @@
+import requests
+data={
+    "name": "hari",
+    "age": 29,
+    "mobileno": "92968333",
+    "city": "Manipur",
+    "salary": 84733.34
+}
+resp=requests.post(url='http://127.0.0.1:8000/api/insert/',json=data)
+print(resp.json())
